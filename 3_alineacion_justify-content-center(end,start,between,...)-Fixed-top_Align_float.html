@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous"> -->
+         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+        <!--    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script> -->
+    <style>
+        .borde {
+            background-color: gray;
+            height: 50px;
+        }
+
+        .borde1 {
+            background-color: aquamarine;
+            height: 50px;
+        }
+
+        .borde2 {
+            text-align: center;
+            background-color: olivedrab;
+            height: 50px;
+        }
+
+        .borde3 {
+            height: 50px;
+            background-color: orange;
+            height: 50px;
+        }
+        .rojo{
+            background-color: red;
+        }
+        .azul{
+            background-color: blue;
+        }
+        
+    </style>
+</head>
+
+<body>
+     <div class="container" >
+        <div class="row">
+
+            <div class="col border">
+                <div class="clearfix">
+                    <span class="float-lef rojo ">clearfix---loat-lef</span>
+                    <span class="float-right azul">Righsadasdassdat</span>
+                </div>
+            </div>
+            <div class="col border">
+                <div class="clearfix">
+                    <span class="float-lef rojo">Lefdddddddddddddt</span>
+                    <span class="float-right azul">Righs-----float-right</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 576px = cold - sm
+    768px = md
+    992px= lg
+    1200px = xl   -->
+    <hr><br>
+    <div class="container">
+        <div class="row d-block">
+            <!-- but DEFAULT IS FLOAT-LEFT -->
+            <div class="float-sm-right">float-sm-right</div><br>
+            <div class="float-md-right">two</div><br>
+            <div class="float-lg-right">three</div><br>
+            <div class="float-xl-right">float-xl-right</div><br>
+            <div class="float-none">float-none</div>
+        </div>
+        <!-- -------------------  CENTRAR ELEMENTOS------------- -->
+    </div>
+    <hr><br>
+    <div class="container">
+        <dic class="row ">
+            <div class="mx-auto border">
+                center
+            </div>
+        </dic>
+        <br>
+        <!-- -------------------------------- -->
+        <dic class="row d-block ">
+            <div class="mx-auto border" style="width: 100px;">
+                center
+            </div>
+        </dic>
+        <br>
+        <!-- -------------------------------- -->
+        <dic class="row d-block">
+            <div class="mx-auto border">
+                center
+            </div>
+        </dic>
+    </div>
+    <!-- -------------------------------- -->
+    <hr><br>
+    <h1>justify-content-start(default)</h1>
+    <div class="container borde"style="height:500px">
+
+        <div class="row borde1 justify-content-start">
+
+            <div class="col-4 borde2">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-4 borde3">
+                <p>
+                    UNO
+                </p>
+            </div>
+        </div>
+    </div>
+     <!-- -------------------------------- -->
+     <hr><br>
+     <h1>justify-content-center</h1>
+     <div class="container borde"style="height:500px">
+ 
+         <div class="row borde1 justify-content-center">
+ 
+             <div class="col-4 borde2">
+                 <p>
+                     UNO
+                 </p>
+             </div>
+             <div class="col-4 borde3">
+                 <p>
+                     UNO
+                 </p>
+             </div>
+         </div>
+     </div>
+      <!-- -------------------------------- -->
+     <hr><br>
+     <h1>justify-content-end</h1>
+     <div class="container borde"style="height:500px">
+ 
+         <div class="row borde1 justify-content-end">
+ 
+             <div class="col-4 borde2">
+                 <p>
+                     UNO
+                 </p>
+             </div>
+             <div class="col-4 borde3">
+                 <p>
+                     UNO
+                 </p>
+             </div>
+         </div>
+     </div>
+     <!-- -------------------------------- -->
+     <hr><br>
+     <h1>justify-content-between(entre)</h1>
+     <div class="container borde"style="height:500px">
+        
+         <div class="row borde1 justify-content-between">
+ 
+             <div class="col-3 borde2">
+                 <p>
+                     UNO
+                 </p>
+                </div>
+             <div class="col-3 borde3">
+                 <p>
+                     UNO
+                 </p>
+                </div>
+             <div class="col-3 borde2">
+                <p>
+                    UNO
+                </p>
+            </div>
+         </div>
+     </div>
+     <!-- -------------------------------- -->
+    <hr><br>
+    <h1>justify-content-around(alrededor)</h1>
+    <div class="container borde"style="height:500px">
+ 
+        <div class="row borde1 justify-content-around">
+ 
+            <div class="col-3 borde2">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-3 borde3">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-3 borde2">
+               <p>
+                   UNO
+               </p>
+           </div>
+        </div>
+    </div>
+     <!-- -------------------------------- -->
+    <hr><br>
+    <h1>align-items-center</h1>
+    <div class="container borde"style="height:500px">
+ 
+        <div class="row borde1 align-items-center"style="height:300px">
+ 
+            <div class="col-3 borde2">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-3 borde3">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-3 borde2">
+               <p>
+                   UNO
+               </p>
+           </div>
+        </div>
+    </div>
+     <!-- -------------------------------- -->
+    <hr><br>
+    <h1>align-items-start</h1>
+    <div class="container borde"style="height:500px">
+ 
+        <div class="row borde1 align-items-start"style="height:300px">
+ 
+            <div class="col-3 borde2">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-3 borde3">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-3 borde2">
+               <p>
+                   UNO
+               </p>
+           </div>
+        </div>
+    </div>
+     <!-- -------------------------------- -->
+    <hr><br>
+    <h1>align-items-end</h1>
+    <div class="container borde"style="height:500px">
+ 
+        <div class="row borde1 align-items-end"style="height:300px">
+ 
+            <div class="col-3 borde2">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-3 borde3">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-3 borde2">
+               <p>
+                   UNO
+               </p>
+           </div>
+        </div>
+    </div>
+     <!-- -------------------------------- -->
+    <hr><br>
+    <h1>align-self-center AND align-self-end</h1>
+    <div class="container borde"style="height:500px">
+ 
+        <div class="row borde1 "style="height:300px">
+ 
+            <div class="col-3 align-self-center borde2">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-3 borde3">
+                <p>
+                    UNO
+                </p>
+            </div>
+            <div class="col-3  align-self-end  borde2">
+               <p>
+                   UNO
+               </p>
+           </div>
+        </div>
+    </div>
+     <!-- -------------------------------- -->
+    <hr><br>
+    <h1>lorem100---fixed-bottom ---top</h1>
+    <div class="container ">
+ 
+        <div class="row ">
+ 
+            <!-- <div class="col-12 borde2   fixed-top"> -->
+            <div class="col-12 borde2   fixed-bottom">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex praesentium minima eveniet velit. Totam quod quaerat nostrum eius sit deserunt explicabo dolor! Quas eligendi hic recusandae nostrum eos qui error?
+                </p>
+            </div>
+
+            <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur molestiae repudiandae culpa fuga placeat nemo autem! Perspiciatis architecto saepe illo. Sapiente corporis ipsa itaque suscipit aspernatur architecto corrupti numquam quisquam unde iusto eos similique facere temporibus, reprehenderit molestiae eaque tenetur nisi earum distinctio dolores. At asperiores nemo maxime. Voluptate quas accusamus tenetur, doloremque deserunt quam inventore velit nesciunt dolor repellat iste! Id aspernatur, doloribus, itaque culpa nam veritatis quod ducimus laudantium dolor ad harum iusto a temporibus incidunt, enim laborum architecto non numquam. Nostrum aspernatur corrupti, blanditiis, maxime error laudantium illum velit eius excepturi corporis quos fuga modi porro quod eaque in expedita tempore commodi deleniti temporibus recusandae voluptatem hic sint. Veritatis numquam eaque nesciunt. Quasi neque nam facere voluptas molestiae, veritatis cumque vero alias doloribus odit consequatur vitae nostrum repudiandae, voluptatibus, laboriosam saepe dolorem. Impedit esse maiores unde totam quis inventore officia laborum, ea placeat dolor voluptate quam nesciunt corrupti ab tempora reiciendis et. Laboriosam delectus et excepturi, odit veniam in suscipit voluptate eaque aut saepe architecto commodi alias reiciendis rem debitis voluptas esse tempora maiores. Perferendis nihil at sint velit vel reiciendis dolorum excepturi nam. Fuga molestias sint tenetur voluptates ex natus non amet dolores minima, laboriosam placeat earum, commodi numquam necessitatibus delectus vel rerum voluptatem, maxime cupiditate? Tempore dolor deserunt nulla provident consequuntur error enim excepturi perspiciatis animi quidem quam illum autem blanditiis illo incidunt, impedit ipsum ratione obcaecati. In quis quia unde et laudantium, doloremque sint molestias aliquid, blanditiis beatae quam accusamus exercitationem laboriosam commodi vero vel, vitae nobis quaerat! Voluptate natus consectetur perspiciatis voluptas sunt asperiores accusantium, animi eos voluptatibus omnis inventore odio sapiente similique nulla dolorem provident, aperiam laudantium possimus repudiandae recusandae rem! Illo, laborum ad aliquid cum necessitatibus assumenda, saepe quasi, repudiandae tempora ipsum ipsam pariatur temporibus voluptatum fugiat dignissimos! Voluptatem eligendi sed fugit praesentium maiores, fuga ipsum architecto repellendus. Odio expedita unde cupiditate. Cum itaque rerum id atque in vero sed unde similique. Ullam et atque ea totam omnis quaerat, explicabo ut animi aspernatur corrupti pariatur tenetur nihil accusantium alias error blanditiis obcaecati porro accusamus facilis aliquam cum fugiat ratione. Eius, ad dolore est vel quis labore quam suscipit corporis assumenda recusandae nostrum, nulla delectus qui odit rem aliquam exercitationem, ipsam dolor quas eaque tempore! Ea corporis laudantium fuga optio accusantium beatae similique mollitia quod molestiae facere, eligendi asperiores nihil repudiandae ipsam quia sequi? Voluptate, fugiat iste quod quas ipsum rem voluptatum mollitia libero saepe, alias itaque ea totam cupiditate odit officiis dolor temporibus magni! Quae reprehenderit libero sequi sed temporibus pariatur quaerat dicta id quis aliquam porro voluptatem a similique, possimus velit accusantium? Sapiente tenetur dolores explicabo rem fuga, tempora amet atque odio facilis excepturi? Nulla sunt nobis, incidunt ratione praesentium placeat, recusandae culpa architecto corrupti numquam tenetur. Mollitia, ratione ipsam, in maiores repellendus repellat dolores quis, tenetur quas provident voluptates quidem pariatur? Tempore architecto hic ratione quisquam! Temporibus sapiente iste aut magnam saepe quis consequuntur autem harum eaque doloremque! Quo magni labore consectetur error obcaecati vel iste perferendis esse quisquam adipisci? Deleniti recusandae modi consectetur optio qui, excepturi magnam praesentium sint fuga eius et provident unde neque officia eligendi suscipit quia molestias dignissimos. Numquam non consectetur a? Harum facere earum illo itaque? Praesentium fugit veniam dolorem placeat ex totam, blanditiis laborum fuga cumque magni dignissimos necessitatibus consectetur doloribus expedita quod autem quidem! Exercitationem ratione aliquam totam dignissimos quos sunt, sint adipisci perferendis neque in rem, atque esse ipsum quo maiores facere blanditiis repellat beatae nesciunt at? Consequuntur architecto natus mollitia, quo deserunt minima. Autem quos excepturi voluptatum quia commodi aperiam nobis, molestiae et hic nostrum eum vel quam reiciendis. Beatae natus quas corporis fuga repellendus deleniti voluptas aut nesciunt magnam quisquam soluta, exercitationem sit aliquam tempore laborum a consequuntur enim omnis, nostrum nobis non facere quae! Adipisci accusamus itaque ex perferendis, nobis expedita ad necessitatibus quia vero, aut minima in incidunt cumque nostrum similique voluptatem eos nemo dolorum nesciunt? Similique quis architecto fuga optio hic quasi impedit nemo et qui tempora. Adipisci similique quisquam nam magnam laboriosam doloribus possimus quaerat, est aspernatur velit molestiae, incidunt aperiam voluptates reprehenderit, tempore inventore maxime tenetur quidem commodi sed praesentium! Laborum cupiditate provident perspiciatis dolor nostrum harum quaerat saepe. Veritatis laboriosam doloremque quasi sit dolor distinctio blanditiis vel quaerat dicta nihil, molestiae neque magnam nulla libero delectus laudantium cumque fugit iure dolorem soluta consequatur, corporis illum eius deserunt! Numquam iste cumque soluta blanditiis? Eum nemo velit suscipit assumenda animi, sed deleniti omnis ratione quas quaerat eligendi, dolores laboriosam non reiciendis maxime obcaecati cum id consequatur veritatis sit quos eveniet atque. Excepturi, magni recusandae. Officiis assumenda tenetur, blanditiis nisi quibusdam quia voluptatem excepturi odio ullam. Quidem voluptatibus distinctio, dolorum facilis doloremque earum vel! Nulla quis laboriosam unde, accusamus non perspiciatis, fugit maiores dignissimos porro facere ullam voluptas praesentium repudiandae. Qui aliquid illo eius atque accusantium animi natus doloribus, rerum quia optio ex ut voluptates dignissimos placeat vel voluptatum laudantium quis repellat, officiis eligendi ad, deleniti iste sapiente labore? Illum doloremque nihil voluptate dolores dicta deleniti atque nulla autem eaque numquam, ducimus provident labore voluptatem quasi sapiente hic excepturi delectus illo ab, est temporibus nisi? Nesciunt sunt expedita ad voluptate consectetur velit, deleniti voluptatum provident voluptatem exercitationem qui esse nam commodi aut praesentium architecto nemo mollitia eligendi? Provident, quo blanditiis consequatur architecto totam eius dignissimos nostrum esse enim eos, repellat magni ea doloremque quod ab animi voluptatum, aliquid laudantium vel quia consequuntur quaerat similique quibusdam? Laborum commodi et quis. Vel, temporibus excepturi illum ad, commodi nisi blanditiis in quasi minima sit quod animi labore a accusamus deserunt nihil cupiditate iusto mollitia quibusdam quisquam! Praesentium repellendus nesciunt sequi id corporis saepe sed ad, quibusdam officiis dicta dignissimos laboriosam expedita labore fuga molestias aut excepturi adipisci deleniti, reprehenderit provident a dolorum. Excepturi, quas rem. Vel, mollitia magni error aliquam tempore voluptate iure laudantium commodi ex nesciunt itaque, sed est molestias sequi similique, delectus deleniti at deserunt iste quod blanditiis tempora. Quas voluptas dicta cumque doloribus cum suscipit ab, blanditiis fugiat sed totam labore vel eos id iure tenetur!</p>
+            </div>
+            
+        </div>
+    </div>
+      <!-- -------------------------------- -->
+      
+    
+        
+</body>
+
+</html>
